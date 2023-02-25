@@ -1,0 +1,8 @@
+// different ways of export a file
+
+module.exports.items = ['item1', 'item2']
+const person ={
+    name: 'bob',
+}
+
+module.exports.singlePerson = person
