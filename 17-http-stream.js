@@ -7,7 +7,7 @@ http
     // res.end(text)
     const fileStream = fs.createReadStream('./content/big.txt', 'utf8')
     fileStream.on('open', () => {
-      fileStream.pipe(res)  // the pipe method push from the readstream to writestream
+      fileStream.pipe(res)
     })
     fileStream.on('error', (err) => {
       res.end(err)
